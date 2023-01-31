@@ -1,6 +1,12 @@
 # EasyNetQ
 Sample code for EasyNetQ and RabbitMQ course.
 
+This code pattern was originally modeled after the "Asynchronous Messaging with RabbitMQ and EasyNetQ" on Pluralsight Skills.
+By Stephen Haunts. 
+
+That code requires some additional updates to make current. This includes an upgrade to the latest version of EasyNetQ. I am also adding Docker support and instructions. 
+
+
 ## Starting RabbitMQ server with managment. 
 I have included a compose.yaml file. From the root run
 ``` bash

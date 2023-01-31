@@ -38,7 +38,8 @@ namespace PolymorphicSubscribe
                 });
 
                 Console.WriteLine("Listening for messages. Hit <return> to quit.");
-                Console.ReadLine();
+                while (Console.ReadKey().Key != ConsoleKey.Enter)
+                { }
             }
         }
     }
