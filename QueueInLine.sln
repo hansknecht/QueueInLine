@@ -7,11 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Shared Code", "1. Shared
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Quick Start", "2. Quick Start", "{3CB4D38F-26FB-4838-A88F-1686875DDDC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyNetQ_QuickStart_Sender", "EasyNetQ_QuickStart_Sender\EasyNetQ_QuickStart_Sender.csproj", "{65DE3A32-3B90-48A6-B692-CD3B785C0801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyNetQ_QuickStart_Sender", "EasyNetQ_QuickStart_Sender\EasyNetQ_QuickStart_Sender.csproj", "{65DE3A32-3B90-48A6-B692-CD3B785C0801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyNetQ_QuickStart_Subscriber", "EasyNetQ_QuickStart_Subscriber\EasyNetQ_QuickStart_Subscriber.csproj", "{B2A37DA0-D446-4046-925D-73C40BD3DEA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyNetQ_QuickStart_Subscriber", "EasyNetQ_QuickStart_Subscriber\EasyNetQ_QuickStart_Subscriber.csproj", "{B2A37DA0-D446-4046-925D-73C40BD3DEA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyNetQMessages", "EasyNetQMessages\EasyNetQMessages.csproj", "{E75F0C6A-996E-4A58-8767-36B903E76912}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyNetQMessages", "EasyNetQMessages\EasyNetQMessages.csproj", "{E75F0C6A-996E-4A58-8767-36B903E76912}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4260780-FE30-4433-98E0-3032382DFAB7}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

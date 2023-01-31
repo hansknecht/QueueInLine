@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "EasyNetQ_QuickStart_Sender": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
