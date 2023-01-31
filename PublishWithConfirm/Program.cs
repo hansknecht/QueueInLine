@@ -46,10 +46,10 @@ namespace Publish
                 Console.WriteLine("   - Enabled publisher confirm.");
                 Console.WriteLine();
 
-                bus.PubSub.Publish(payment1);
-                bus.PubSub.Publish(payment2);
-                bus.PubSub.Publish(payment3);
-                bus.PubSub.Publish(payment4);
+                Publish(bus, payment1);
+                Publish(bus, payment2);
+                Publish(bus, payment3);
+                Publish(bus, payment4);
             }
         }
         public static void Publish(IBus bus, CardPaymentRequestMessage message)
