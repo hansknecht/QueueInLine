@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NamedQueuePublish": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
