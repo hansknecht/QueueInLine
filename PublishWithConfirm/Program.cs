@@ -40,9 +40,10 @@ namespace Publish
                 Amount = 34.87m
             };
 
-            using (var bus = RabbitHutch.CreateBus("host=localhost"))
+            using (var bus = RabbitHutch.CreateBus("host=localhost;publisherConfirms=true;timeout=10"))
             {
                 Console.WriteLine("Publishing messages with publish and subscribe.");
+                Console.WriteLine("   - Enabled publisher confirm.");
                 Console.WriteLine();
 
                 bus.PubSub.Publish(payment1);
@@ -50,6 +51,22 @@ namespace Publish
                 bus.PubSub.Publish(payment3);
                 bus.PubSub.Publish(payment4);
             }
+        }
+        public static void Publish(IBus bus, CardPaymentRequestMessage message)
+        {
+            bus.PubSub.PublishAsync(message).ContinueWith(t =>
+            {
+                if (t.IsCompleted && !t.IsFaulted)
+                {
+                    Console.WriteLine("Task completed and not faulted.");
+                }
+                if (t.IsFaulted)
+                {
+                    Console.WriteLine("\n\n");
+                    Console.WriteLine(t.Exception);
+                    Console.WriteLine("\n\n");
+                }
+            });
         }
     }
 }
