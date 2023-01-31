@@ -13,16 +13,26 @@ I have included a compose.yaml file. From the root run
 docker compose up -d
 ```
 
+## Build each project
 To build each project with docker you need to start at the root level of the solution and call the image step with
 ``` bash
 docker image build -f <Project>/Dockerfile -t <imageName> .
 ```
 
+View with 
+``` bash
+docker image ls
+```
 
-To run use
+To run the individual publishers
+``` bash
+docker container run --net host <imageName>
+```
+
+To run Subscribe you need to include the interactive *-it* option
 
 ``` bash
-docker container run --net host subscriber
+docker container run -it --net host <imageName>
 ```
 
 # Areas
