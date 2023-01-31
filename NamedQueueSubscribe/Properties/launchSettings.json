@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NamedQueueSubscribe": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

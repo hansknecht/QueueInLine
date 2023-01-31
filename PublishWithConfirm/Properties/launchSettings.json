@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PublishWithConfirm": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

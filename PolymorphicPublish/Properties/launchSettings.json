@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PolymorphicPublish": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

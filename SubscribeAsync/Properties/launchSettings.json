@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SubscribeAsync": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

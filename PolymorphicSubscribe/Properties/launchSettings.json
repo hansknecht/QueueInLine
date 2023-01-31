@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PolymorphicSubscribe": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -18,3 +18,15 @@ To run use
 ``` bash
 docker container run --net host subscriber
 ```
+
+# Areas
+## 1. Shared Code
+This is the message formats needed
+
+## 2. Quick Start
+This is a test that messages are moving from one end point to another
+
+## 3. Publish and Subscribe
+This demonstrates the overall patter
+
+
