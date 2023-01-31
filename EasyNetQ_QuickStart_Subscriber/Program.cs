@@ -12,8 +12,8 @@ namespace EasyNetQTestSubscriber
             {
                 bus.PubSub.Subscribe<TextMessage>("test", HandleTextMessage);
 
-                Console.WriteLine("Listening for messages. Hit <return> to quit.");
-                Console.ReadLine();
+                Console.WriteLine("Listening for messages.");
+                while (true) { }
             }
         }
 
